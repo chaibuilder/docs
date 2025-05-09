@@ -1,6 +1,10 @@
+---
+title: Open source Chai Builder SDK
+description: 
+---
 The @chaibuilder/sdk is the core foundation of the ChaiBuilder ecosystem. It is a pure React-based website builder that provides all the essential tools and components needed to create and customize websites visually using React and Tailwind CSS.
 
-##Key Features
+## Key Features
 - Pure React Implementation: Built entirely with React, making it compatible with the React ecosystem
 - Tailwind CSS Integration: First-class support for Tailwind CSS styling
 - Visual Building Experience: Intuitive interface for rapid website creation
@@ -77,16 +81,16 @@ export default async function Page () => {
 ## Extending Builder
 The SDK allows you to extend its functionality by adding custom blocks. Also the builder allows you to add/overwrite certain functionality via our extension apis.
 
-- `registerChaiBlock()`
-- `registerChaiMediaManager()`
-- `registerChaiFont()`
-- `registerChaiSidebarPanel()`
+- [registerChaiBlock](/docs/developers/register-custom-chai-block)
+- [registerChaiMediaManager](/docs/developers/register-custom-chai-block)
+- [registerChaiFont](/docs/developers/register-custom-chai-block)
+- [registerChaiSidebarPanel](/docs/developers/register-custom-chai-block)
 
 ### When to Use SDK vs. Pages
 Use @chaibuilder/sdk when you want to build your own solution. You will need to handle everything from storage to authentication and more.
 Use @chaibuilder/pages when you want a complete solution where everything is handled for you.
 
-> 💡 [Learn more](/docs/chaibuilder-sdk-vs-pages) about @chaibuilder/sdk vs @chaibuklder/pages 
+> 💡 [Learn more](/docs/overview/chaibuilder-sdk-vs-pages) about @chaibuilder/sdk vs @chaibuklder/pages 
 
 ## Open Source
 The ChaiBuilder SDK is open source and available on GitHub. Contributions from the community are welcome.
