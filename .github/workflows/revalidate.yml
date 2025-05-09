@@ -1,0 +1,24 @@
+name: Revalidate Docs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [closed]
+    branches: [main]
+
+jobs:
+  revalidate:
+    if: github.event.pull_request.merged == true || github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: jitterbit/get-changed-files@v1
+        id: files
+
+      - run: |
+          curl -X POST \
+            -H "Authorization: Bearer ${{ secrets.ISR_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{"files":${{ steps.files.outputs.all }}}' \
+            https://chaibuilder.com/chai/api/revalidate
