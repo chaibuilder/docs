@@ -99,5 +99,18 @@
         ]
       }
     ]
+  },
+  {
+    "id": "03-editors",
+    "title": "Editors",
+    "slug": "/docs/editors",
+    "children": [
+      {
+        "id": "03-editors/01-creating-new-page.md",
+        "title": "Creating New Page",
+        "slug": "/docs/editors/creating-new-page",
+        "path": "/docs/03-editors/01-creating-new-page.md"
+      }
+    ]
   }
 ]
