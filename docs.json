@@ -1,0 +1,103 @@
+[
+  {
+    "id": "01-overview",
+    "title": "Overview",
+    "slug": "/docs/overview",
+    "children": [
+      {
+        "id": "01-overview/01-about-chai-builder.md",
+        "title": "About Chai Builder",
+        "slug": "/docs/overview/about-chai-builder",
+        "path": "/docs/01-overview/01-about-chai-builder.md"
+      },
+      {
+        "id": "01-overview/02-open-source-website-builder.md",
+        "title": "Open Source Website Builder",
+        "slug": "/docs/overview/open-source-website-builder",
+        "path": "/docs/01-overview/02-open-source-website-builder.md"
+      },
+      {
+        "id": "01-overview/03-chaibuilder-sdk-vs-pages.md",
+        "title": "Chaibuilder Sdk Vs Pages",
+        "slug": "/docs/overview/chaibuilder-sdk-vs-pages",
+        "path": "/docs/01-overview/03-chaibuilder-sdk-vs-pages.md"
+      },
+      {
+        "id": "01-overview/04-changelog.md",
+        "title": "Changelog",
+        "slug": "/docs/overview/changelog",
+        "path": "/docs/01-overview/04-changelog.md"
+      },
+      {
+        "id": "01-overview/05-roadmap.md",
+        "title": "Roadmap",
+        "slug": "/docs/overview/roadmap",
+        "path": "/docs/01-overview/05-roadmap.md"
+      }
+    ]
+  },
+  {
+    "id": "02-developers",
+    "title": "Developers",
+    "slug": "/docs/developers",
+    "children": [
+      {
+        "id": "02-developers/01-getting-started",
+        "title": "Getting Started",
+        "slug": "/docs/developers/getting-started",
+        "children": [
+          {
+            "id": "02-developers/01-getting-started/01-creating-new-site.md",
+            "title": "Creating New Site",
+            "slug": "/docs/developers/getting-started/creating-new-site",
+            "path": "/docs/02-developers/01-getting-started/01-creating-new-site.md"
+          },
+          {
+            "id": "02-developers/01-getting-started/02-deploy-to-vercel.md",
+            "title": "Deploy To Vercel",
+            "slug": "/docs/developers/getting-started/deploy-to-vercel",
+            "path": "/docs/02-developers/01-getting-started/02-deploy-to-vercel.md"
+          },
+          {
+            "id": "02-developers/01-getting-started/03-setup-locally.md",
+            "title": "Setup Locally",
+            "slug": "/docs/developers/getting-started/setup-locally",
+            "path": "/docs/02-developers/01-getting-started/03-setup-locally.md"
+          }
+        ]
+      },
+      {
+        "id": "02-developers/02-custom-blocks",
+        "title": "Custom Blocks",
+        "slug": "/docs/developers/custom-blocks",
+        "children": [
+          {
+            "id": "02-developers/02-custom-blocks/01-registering-custom-blocks.md",
+            "title": "Registering Custom Blocks",
+            "slug": "/docs/developers/custom-blocks/registering-custom-blocks",
+            "path": "/docs/02-developers/02-custom-blocks/01-registering-custom-blocks.md"
+          },
+          {
+            "id": "02-developers/02-custom-blocks/02-registering-blocks-props.md",
+            "title": "Registering Blocks Props",
+            "slug": "/docs/developers/custom-blocks/registering-blocks-props",
+            "path": "/docs/02-developers/02-custom-blocks/02-registering-blocks-props.md"
+          }
+        ]
+      },
+      {
+        "id": "02-developers/03-sidebar-panels",
+        "title": "Sidebar Panels",
+        "slug": "/docs/developers/sidebar-panels",
+        "children": [
+          {
+            "id": "02-developers/03-sidebar-panels/01-registering-sidebar-panels.md",
+            "title": "Registering Sidebar Panels",
+            "slug": "/docs/developers/sidebar-panels/registering-sidebar-panels",
+            "path": "/docs/02-developers/03-sidebar-panels/01-registering-sidebar-panels.md"
+          }
+        ]
+      }
+    ]
+  }
+]

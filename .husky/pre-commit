@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🔄 Running docs.json generator..."
+
+# Run the script to generate docs.json
+pnpm generate-docs-json
+
+# Check if the script executed successfully
+if [ $? -ne 0 ]; then
+  echo "❌ Failed to generate docs.json"
+  exit 1
+fi
+
+# Add the generated docs.json to the commit
+git add "$(git rev-parse --show-toplevel)/docs.json"
+
+echo "✅ docs.json generated and added to commit"
