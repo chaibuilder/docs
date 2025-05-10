@@ -3,7 +3,6 @@ title: About Chai Builder
 description: THis is description
 ---
 
-## About Chai Builder
 ChaiBuilder is a powerful visual website builder built on top of React JS and Tailwind CSS. It empowers developers and designers to create stunning websites rapidly without compromising on flexibility or customization options.
 
 ## Evolution
