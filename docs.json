@@ -86,17 +86,16 @@
         ]
       },
       {
-        "id": "02-developers/03-sidebar-panels",
-        "title": "Sidebar Panels",
-        "slug": "/docs/developers/sidebar-panels",
-        "children": [
-          {
-            "id": "02-developers/03-sidebar-panels/01-registering-sidebar-panels.md",
-            "title": "Registering Sidebar Panels",
-            "slug": "/docs/developers/sidebar-panels/registering-sidebar-panels",
-            "path": "/docs/02-developers/03-sidebar-panels/01-registering-sidebar-panels.md"
-          }
-        ]
+        "id": "02-developers/03-registering-sidebar-panels.md",
+        "title": "Registering Sidebar Panels",
+        "slug": "/docs/developers/registering-sidebar-panels",
+        "path": "/docs/02-developers/03-registering-sidebar-panels.md"
+      },
+      {
+        "id": "02-developers/04-regsiter-custom-fonts.md",
+        "title": "Registering Custom Fonts In Chai Builder",
+        "slug": "/docs/developers/regsiter-custom-fonts",
+        "path": "/docs/02-developers/04-regsiter-custom-fonts.md"
       }
     ]
   },

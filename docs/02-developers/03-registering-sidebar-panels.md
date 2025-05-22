@@ -1,5 +1,15 @@
 ---
 title: Registering Sidebar Panels
+description: Learn how to add custom sidebar panels in the ChaiBuilder editor using the registerChaiSidebarPanel function.
+keywords:
+  [
+    ChaiBuilder,
+    sidebar panels,
+    custom panels,
+    web development,
+    UI customization,
+  ]
+slug: developers/registering-sidebar-panels
 ---
 
 This doc explains how to add custom sidebar panels in the ChaiBuilder editor.
