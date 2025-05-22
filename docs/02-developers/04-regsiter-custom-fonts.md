@@ -13,8 +13,6 @@ keywords:
 slug: developers/register-custom-fonts
 ---
 
-# Registering Custom Fonts
-
 ChaiBuilder allows you to register custom fonts for use in your projects. This guide explains how to register fonts using the `registerChaiFont` function from the `@chaibuilder/runtime` package.
 
 ## Overview
