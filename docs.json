@@ -72,24 +72,24 @@
         "slug": "/docs/developers/custom-blocks",
         "children": [
           {
-            "id": "02-developers/02-custom-blocks/01-registering-custom-blocks.md",
-            "title": "Registering Custom Blocks",
-            "slug": "/docs/developers/custom-blocks/registering-custom-blocks",
-            "path": "/docs/02-developers/02-custom-blocks/01-registering-custom-blocks.md"
+            "id": "02-developers/02-custom-blocks/01-register-custom-blocks.md",
+            "title": "Register Custom Blocks",
+            "slug": "/docs/developers/custom-blocks/register-custom-blocks",
+            "path": "/docs/02-developers/02-custom-blocks/01-register-custom-blocks.md"
           },
           {
-            "id": "02-developers/02-custom-blocks/02-registering-blocks-props.md",
-            "title": "Registering Blocks Props",
-            "slug": "/docs/developers/custom-blocks/registering-blocks-props",
-            "path": "/docs/02-developers/02-custom-blocks/02-registering-blocks-props.md"
+            "id": "02-developers/02-custom-blocks/02-register-blocks-props.md",
+            "title": "Register Blocks Props",
+            "slug": "/docs/developers/custom-blocks/register-blocks-props",
+            "path": "/docs/02-developers/02-custom-blocks/02-register-blocks-props.md"
           }
         ]
       },
       {
-        "id": "02-developers/03-registering-sidebar-panels.md",
-        "title": "Registering Sidebar Panels",
-        "slug": "/docs/developers/registering-sidebar-panels",
-        "path": "/docs/02-developers/03-registering-sidebar-panels.md"
+        "id": "02-developers/03-register-sidebar-panels.md",
+        "title": "Register Sidebar Panels",
+        "slug": "/docs/developers/register-sidebar-panels",
+        "path": "/docs/02-developers/03-register-sidebar-panels.md"
       },
       {
         "id": "02-developers/04-regsiter-custom-fonts.md",
