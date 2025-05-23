@@ -67,41 +67,41 @@
         ]
       },
       {
-        "id": "02-developers/03-custom-blocks",
-        "title": "Custom Blocks",
-        "slug": "/docs/developers/custom-blocks",
+        "id": "02-developers/02-extending-builder",
+        "title": "Extending Builder",
+        "slug": "/docs/developers/extending-builder",
         "children": [
           {
-            "id": "02-developers/03-custom-blocks/01-register-custom-blocks.md",
-            "title": "Register Custom Blocks",
-            "slug": "/docs/developers/custom-blocks/register-custom-blocks",
-            "path": "/docs/02-developers/03-custom-blocks/01-register-custom-blocks.md"
+            "id": "02-developers/02-extending-builder/01-extending-chai-builder.md",
+            "title": "Extending Chai Builder",
+            "slug": "/docs/developers/extending-builder/extending-chai-builder",
+            "path": "/docs/02-developers/02-extending-builder/01-extending-chai-builder.md"
           },
           {
-            "id": "02-developers/03-custom-blocks/02-register-blocks-props.md",
+            "id": "02-developers/02-extending-builder/02-register-blocks-props.md",
             "title": "Register Blocks Props",
-            "slug": "/docs/developers/custom-blocks/register-blocks-props",
-            "path": "/docs/02-developers/03-custom-blocks/02-register-blocks-props.md"
+            "slug": "/docs/developers/extending-builder/register-blocks-props",
+            "path": "/docs/02-developers/02-extending-builder/02-register-blocks-props.md"
+          },
+          {
+            "id": "02-developers/02-extending-builder/03-register-custom-blocks.md",
+            "title": "Register Custom Blocks",
+            "slug": "/docs/developers/extending-builder/register-custom-blocks",
+            "path": "/docs/02-developers/02-extending-builder/03-register-custom-blocks.md"
+          },
+          {
+            "id": "02-developers/02-extending-builder/04-register-sidebar-panels.md",
+            "title": "Register Sidebar Panels",
+            "slug": "/docs/developers/extending-builder/register-sidebar-panels",
+            "path": "/docs/02-developers/02-extending-builder/04-register-sidebar-panels.md"
+          },
+          {
+            "id": "02-developers/02-extending-builder/05-regsiter-custom-fonts.md",
+            "title": "Regsiter Custom Fonts",
+            "slug": "/docs/developers/extending-builder/regsiter-custom-fonts",
+            "path": "/docs/02-developers/02-extending-builder/05-regsiter-custom-fonts.md"
           }
         ]
-      },
-      {
-        "id": "02-developers/02-extending-chai-builder.md",
-        "title": "Extending Chai Builder",
-        "slug": "/docs/developers/extending-chai-builder",
-        "path": "/docs/02-developers/02-extending-chai-builder.md"
-      },
-      {
-        "id": "02-developers/04-register-sidebar-panels.md",
-        "title": "Register Sidebar Panels",
-        "slug": "/docs/developers/register-sidebar-panels",
-        "path": "/docs/02-developers/04-register-sidebar-panels.md"
-      },
-      {
-        "id": "02-developers/05-regsiter-custom-fonts.md",
-        "title": "Regsiter Custom Fonts",
-        "slug": "/docs/developers/regsiter-custom-fonts",
-        "path": "/docs/02-developers/05-regsiter-custom-fonts.md"
       }
     ]
   },
