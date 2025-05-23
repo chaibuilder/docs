@@ -14,8 +14,6 @@ keywords:
 slug: developers/extending-chai-builder
 ---
 
-# Extending Chai Builder
-
 Chai Builder provides a powerful extension system that allows you to customize and enhance its functionality. This guide covers all the available extension options and how to implement them in your projects.
 
 ## Overview
