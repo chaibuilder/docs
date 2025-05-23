@@ -35,6 +35,7 @@ First, ensure you have the required package:
 
 ```bash
 pnpm add @chaibuilder/sdk
+pnpm add @chaibuilder/pages //if you are using @chaibuilder/pages
 ```
 
 ## Basic Setup

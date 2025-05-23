@@ -28,6 +28,7 @@ First, ensure you have the required package:
 
 ```bash
 pnpm add @chaibuilder/sdk
+pnpm add @chaibuilder/pages //if you are using @chaibuilder/pages
 ```
 
 ## Usage
@@ -40,6 +41,14 @@ import {
   ChaiFontViaUrl,
   ChaiFontViaSrc,
 } from "@chaibuilder/sdk/runtime";
+
+//or
+
+import {
+  registerChaiFont,
+  ChaiFontViaUrl,
+  ChaiFontViaSrc,
+} from "@chaibuilder/pages/runtime"; //if you are using @chaibuilder/pages
 ```
 
 ### Method 1: Register Font via URL (e.g., Google Fonts)
