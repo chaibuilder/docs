@@ -241,9 +241,9 @@ Here's a summary of all the extension functions available in Chai Builder:
 
 ```tsx
 // Import all extension functions
+import { registerChaiBlock, registerChaiFont } from "@chaibuilder/sdk/runtime";
+
 import {
-  registerChaiBlock,
-  registerChaiFont,
   registerChaiSidebarPanel,
   registerChaiTopBar,
   registerChaiMediaManager,
@@ -252,7 +252,7 @@ import {
   registerBlockSettingTemplate,
   registerChaiAddBlockTab,
   registerChaiSaveToLibrary,
-} from "@chaibuilder/sdk/runtime";
+} from "@chaibuilder/sdk";
 ```
 
 For detailed examples of each extension type, refer to the specific documentation pages linked in the sections above.
