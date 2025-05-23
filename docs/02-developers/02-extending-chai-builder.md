@@ -23,9 +23,9 @@ Chai Builder provides a powerful extension system that allows you to customize a
 You can extend Chai Builder in various ways:
 
 1. [Add custom blocks](#registering-custom-blocks)
-2. [Register sidebar panels](#registering-sidebar-panels)
+2. [Add sidebar panels](#registering-sidebar-panels)
 3. [Add custom fonts](#registering-custom-fonts)
-4. [Customize the top bar](#customizing-the-top-bar)
+4. [Add top bar](#customizing-the-top-bar)
 5. [Add custom media manager](#customizing-the-media-manager)
 6. [Add custom block settings](#customizing-block-settings)
 7. [Add custom "Add Block" tabs](#adding-custom-add-block-tabs)
@@ -55,8 +55,10 @@ registerChaiBlock<T>(component: React.ComponentType<T>, config: ChaiBlockConfig)
 
 **Parameters:**
 
-- `component`: React component to be used as a block
-- `config`: Configuration object for the block (type, category, label, etc.)
+| Parameter   | Type                     | Description                                                      |
+| ----------- | ------------------------ | ---------------------------------------------------------------- |
+| `component` | `React.ComponentType<T>` | React component to be used as a block                            |
+| `config`    | `ChaiBlockConfig`        | Configuration object for the block (type, category, label, etc.) |
 
 ## Registering Sidebar Panels
 
@@ -70,14 +72,21 @@ registerChaiSidebarPanel(panelId: string, panelOptions: ChaiSidebarPanel): void
 
 **Parameters:**
 
-- `panelId`: Unique identifier for the panel
-- `panelOptions`: Configuration object with the following properties:
-  - `position`: "top" or "bottom"
-  - `label`: Display name for the panel
-  - `button`: React component for the sidebar button
-  - `panel`: React component for the panel content
-  - `width`: (Optional) Width of the panel in pixels
-  - `view`: (Optional) "standard", "modal", "overlay", or "drawer"
+| Parameter      | Type               | Description                                        |
+| -------------- | ------------------ | -------------------------------------------------- |
+| `panelId`      | `string`           | Unique identifier for the panel                    |
+| `panelOptions` | `ChaiSidebarPanel` | Configuration object with the following properties |
+
+**ChaiSidebarPanel Properties:**
+
+| Property   | Type                                             | Required | Description                            |
+| ---------- | ------------------------------------------------ | -------- | -------------------------------------- |
+| `position` | `"top" \| "bottom"`                              | Yes      | Position of the panel in the sidebar   |
+| `label`    | `string`                                         | Yes      | Display name for the panel             |
+| `button`   | `React.ComponentType`                            | Yes      | React component for the sidebar button |
+| `panel`    | `React.ComponentType`                            | No       | React component for the panel content  |
+| `width`    | `number`                                         | No       | Width of the panel in pixels           |
+| `view`     | `"standard" \| "modal" \| "overlay" \| "drawer"` | No       | How the panel should be displayed      |
 
 ## Registering Custom Fonts
 
@@ -91,14 +100,24 @@ registerChaiFont(fontName: string, options: ChaiFontViaUrl | ChaiFontViaSrc): vo
 
 **Parameters:**
 
-- `fontName`: Name of the font to register
-- `options`: Font configuration, either:
-  - `ChaiFontViaUrl`: For fonts loaded via URL (e.g., Google Fonts)
-    - `url`: URL to the font stylesheet
-    - `fallback`: Fallback font family
-  - `ChaiFontViaSrc`: For fonts loaded via source files
-    - `fallback`: Fallback font family
-    - `src`: Array of font source objects with url and format properties
+| Parameter  | Type                               | Description                  |
+| ---------- | ---------------------------------- | ---------------------------- |
+| `fontName` | `string`                           | Name of the font to register |
+| `options`  | `ChaiFontViaUrl \| ChaiFontViaSrc` | Font configuration object    |
+
+**ChaiFontViaUrl Properties:**
+
+| Property   | Type     | Description                                                   |
+| ---------- | -------- | ------------------------------------------------------------- |
+| `url`      | `string` | URL to the font stylesheet (e.g., Google Fonts URL)           |
+| `fallback` | `string` | Fallback font family to use if the primary font fails to load |
+
+**ChaiFontViaSrc Properties:**
+
+| Property   | Type     | Description                                                   |
+| ---------- | -------- | ------------------------------------------------------------- |
+| `fallback` | `string` | Fallback font family to use if the primary font fails to load |
+| `src`      | `Array`  | Array of font source objects with url and format properties   |
 
 ## Customizing the Top Bar
 
@@ -112,7 +131,9 @@ registerChaiTopBar(component: React.ComponentType): void
 
 **Parameters:**
 
-- `component`: React component to be used as the top bar
+| Parameter   | Type                  | Description                               |
+| ----------- | --------------------- | ----------------------------------------- |
+| `component` | `React.ComponentType` | React component to be used as the top bar |
 
 ## Customizing the Media Manager
 
@@ -126,18 +147,18 @@ registerChaiMediaManager(component: React.ComponentType<MediaManagerProps>): voi
 
 **Parameters:**
 
-- `component`: React component to be used as the media manager
+| Parameter   | Type                                     | Description                                     |
+| ----------- | ---------------------------------------- | ----------------------------------------------- |
+| `component` | `React.ComponentType<MediaManagerProps>` | React component to be used as the media manager |
 
-**MediaManagerProps Interface:**
+**MediaManagerProps Properties:**
 
-```tsx
-type MediaManagerProps = {
-  assetId?: string;
-  close: () => void;
-  onSelect: (assets: ChaiAsset | ChaiAsset[]) => void;
-  mode?: "image" | "video" | "audio";
-};
-```
+| Property   | Type                                         | Required | Description                                |
+| ---------- | -------------------------------------------- | -------- | ------------------------------------------ |
+| `assetId`  | `string`                                     | No       | ID of the asset to edit (if applicable)    |
+| `close`    | `() => void`                                 | Yes      | Function to close the media manager        |
+| `onSelect` | `(assets: ChaiAsset \| ChaiAsset[]) => void` | Yes      | Callback function when assets are selected |
+| `mode`     | `"image" \| "video" \| "audio"`              | No       | Type of media to manage                    |
 
 ## Customizing Block Settings
 
@@ -153,11 +174,18 @@ registerBlockSettingTemplate(id: string, component: React.ComponentType<any>): v
 
 **Parameters:**
 
-- `id`: Unique identifier for the widget, field, or template
-- `component`: React component to be used as the widget, field, or template
-  - Widget components receive `{ value, onChange }` props
-  - Field components receive field-specific properties
-  - Template components receive the entire form structure including children
+| Parameter   | Type                       | Description                                                  |
+| ----------- | -------------------------- | ------------------------------------------------------------ |
+| `id`        | `string`                   | Unique identifier for the widget, field, or template         |
+| `component` | `React.ComponentType<any>` | React component to be used as the widget, field, or template |
+
+**Component Props:**
+
+| Component Type | Props Received                           |
+| -------------- | ---------------------------------------- |
+| Widget         | `{ value, onChange }`                    |
+| Field          | Field-specific properties                |
+| Template       | Entire form structure including children |
 
 ## Adding Custom "Add Block" Tabs
 
@@ -171,10 +199,17 @@ registerChaiAddBlockTab(id: string, tab: AddBlockTab): void
 
 **Parameters:**
 
-- `id`: Unique identifier for the tab
-- `tab`: Configuration object with the following properties:
-  - `tab`: React component for the tab button
-  - `tabContent`: React component for the tab content
+| Parameter | Type          | Description                      |
+| --------- | ------------- | -------------------------------- |
+| `id`      | `string`      | Unique identifier for the tab    |
+| `tab`     | `AddBlockTab` | Configuration object for the tab |
+
+**AddBlockTab Properties:**
+
+| Property     | Type                  | Description                         |
+| ------------ | --------------------- | ----------------------------------- |
+| `tab`        | `React.ComponentType` | React component for the tab button  |
+| `tabContent` | `React.ComponentType` | React component for the tab content |
 
 ## Adding Save to Library Functionality
 
@@ -188,17 +223,17 @@ registerChaiSaveToLibrary(component: ComponentType<SaveToLibraryProps>): void
 
 **Parameters:**
 
-- `component`: React component to be used for the Save to Library functionality
+| Parameter   | Type                                | Description                                                      |
+| ----------- | ----------------------------------- | ---------------------------------------------------------------- |
+| `component` | `ComponentType<SaveToLibraryProps>` | React component to be used for the Save to Library functionality |
 
-**SaveToLibraryProps Interface:**
+**SaveToLibraryProps Properties:**
 
-```tsx
-type SaveToLibraryProps = {
-  blockId: string;
-  blocks: ChaiBlock[];
-  close: () => void;
-};
-```
+| Property  | Type          | Description                            |
+| --------- | ------------- | -------------------------------------- |
+| `blockId` | `string`      | ID of the block being saved            |
+| `blocks`  | `ChaiBlock[]` | Array of blocks to save to the library |
+| `close`   | `() => void`  | Function to close the save dialog      |
 
 ## Extension Summary
 
