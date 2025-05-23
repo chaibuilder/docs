@@ -13,7 +13,7 @@ keywords:
 slug: developers/register-custom-fonts
 ---
 
-ChaiBuilder allows you to register custom fonts for use in your projects. This guide explains how to register fonts using the `registerChaiFont` function from the `@chaibuilder/runtime` package.
+ChaiBuilder allows you to register custom fonts for use in your projects. This guide explains how to register fonts using the `registerChaiFont` function from the `@chaibuilder/sdk/runtime` package.
 
 ## Overview
 
@@ -27,7 +27,7 @@ The `registerChaiFont` function allows you to add custom fonts to your Chai Buil
 First, ensure you have the required package:
 
 ```bash
-pnpm add @chaibuilder/runtime
+pnpm add @chaibuilder/sdk
 ```
 
 ## Usage
@@ -39,7 +39,7 @@ import {
   registerChaiFont,
   ChaiFontViaUrl,
   ChaiFontViaSrc,
-} from "@chaibuilder/runtime";
+} from "@chaibuilder/sdk/runtime";
 ```
 
 ### Method 1: Register Font via URL (e.g., Google Fonts)
@@ -91,7 +91,7 @@ import {
   ChaiFontViaSrc,
   ChaiFontViaUrl,
   registerChaiFont,
-} from "@chaibuilder/runtime";
+} from "@chaibuilder/sdk/runtime";
 
 export const extendChaiBuilder = () => {
   // Register Google Font

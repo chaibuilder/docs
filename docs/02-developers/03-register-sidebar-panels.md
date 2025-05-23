@@ -23,13 +23,13 @@ Sidebar panels are UI components that appear in the ChaiBuilder editor's sidebar
 First, ensure you have the required package:
 
 ```bash
-pnpm add @chaibuilder/runtime
+pnpm add @chaibuilder/sdk
 ```
 
 ## Basic Usage
 
 ```tsx
-import { registerChaiSidebarPanel } from "@chaibuilder/runtime";
+import { registerChaiSidebarPanel } from "@chaibuilder/sdk/runtime";
 
 // Define your button component
 const MyPanelButton = ({ isActive, show }) => (
@@ -70,31 +70,38 @@ registerChaiSidebarPanel("my-custom-panel", {
 
 - `options` (object): Configuration options for the panel with the following properties:
 
-  - `position` (string, required): Position of the panel in the sidebar. Values: `"top"` or `"bottom"`.
+| Property   | Type      | Required | Description                                                                                            |
+| ---------- | --------- | -------- | ------------------------------------------------------------------------------------------------------ |
+| `position` | string    | Yes      | Position of the panel in the sidebar. Values: `"top"` or `"bottom"`.                                   |
+| `label`    | string    | Yes      | Display name for the panel. Used for accessibility and tooltips.                                       |
+| `button`   | Component | Yes      | React component for the sidebar button that toggles the panel.                                         |
+| `panel`    | Component | No       | React component for the panel content.                                                                 |
+| `width`    | number    | No       | Width of the panel in pixels. Default is determined by the view type.                                  |
+| `view`     | string    | No       | How the panel should be displayed. Values: `"standard"` (default), `"modal"`, `"overlay"`, `"drawer"`. |
 
-  - `label` (string, required): Display name for the panel. Used for accessibility and tooltips.
+#### Button Component Props
 
-  - `button` (Component, required): React component for the sidebar button that toggles the panel. Receives props:
+| Prop       | Type     | Description                                    |
+| ---------- | -------- | ---------------------------------------------- |
+| `isActive` | boolean  | Whether the panel is currently active/open.    |
+| `show`     | function | Function to open the panel.                    |
+| `panelId`  | string   | The ID of the panel.                           |
+| `position` | string   | The position of the panel ("top" or "bottom"). |
 
-    - `isActive` (boolean): Whether the panel is currently active/open
-    - `show` (function): Function to open the panel
-    - `panelId` (string): The ID of the panel
-    - `position` (string): The position of the panel ("top" or "bottom")
+#### Panel Component Props
 
-  - `panel` (Component, optional): React component for the panel content. Receives props:
+| Prop    | Type     | Description                  |
+| ------- | -------- | ---------------------------- |
+| `close` | function | Function to close the panel. |
 
-    - `close` (function): Function to close the panel
+#### View Types
 
-  - `width` (number, optional): Width of the panel in pixels. Default is determined by the view type.
-
-  - `view` (string, optional): How the panel should be displayed. Values:
-
-    - `"standard"` (default): Panel opens inline in the sidebar
-    - `"modal"`: Panel opens as a modal dialog
-    - `"overlay"`: Panel opens as an overlay on top of the editor
-    - `"drawer"`: Panel opens as a drawer from the side
-
-  - `isInternal` (boolean, optional): Whether the panel is for internal use only. Internal panels may be hidden in certain contexts.
+| Type         | Description                                     |
+| ------------ | ----------------------------------------------- |
+| `"standard"` | Panel opens inline in the sidebar (default).    |
+| `"modal"`    | Panel opens as a modal dialog.                  |
+| `"overlay"`  | Panel opens as an overlay on top of the editor. |
+| `"drawer"`   | Panel opens as a drawer from the side.          |
 
 ## Panel Types and Examples
 
