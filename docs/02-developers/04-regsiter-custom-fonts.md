@@ -66,21 +66,31 @@ registerChaiFont("Geist", {
 
 #### Parameters
 
-- `fontName` (string): The name of the font to register. This will be used in the font selector in the Chai Builder editor.
-
-- `options` (ChaiFontViaUrl | ChaiFontViaSrc): Configuration for the font.
+| Parameter  | Type                             | Description                                                                                          |
+| ---------- | -------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `fontName` | string                           | The name of the font to register. This will be used in the font selector in the Chai Builder editor. |
+| `options`  | ChaiFontViaUrl \| ChaiFontViaSrc | Configuration for the font.                                                                          |
 
 #### ChaiFontViaUrl Options
 
-- `url` (string): URL to the font stylesheet (e.g., Google Fonts URL)
-- `fallback` (string): Fallback font family to use if the primary font fails to load
+| Property   | Type   | Description                                                   |
+| ---------- | ------ | ------------------------------------------------------------- |
+| `url`      | string | URL to the font stylesheet (e.g., Google Fonts URL)           |
+| `fallback` | string | Fallback font family to use if the primary font fails to load |
 
 #### ChaiFontViaSrc Options
 
-- `fallback` (string): Fallback font family to use if the primary font fails to load
-- `src` (Array): Array of font source objects with the following properties:
-  - `url` (string): Path to the font file
-  - `format` (string): Format of the font file (e.g., 'woff', 'woff2', 'ttf', 'otf')
+| Property   | Type   | Description                                                   |
+| ---------- | ------ | ------------------------------------------------------------- |
+| `fallback` | string | Fallback font family to use if the primary font fails to load |
+| `src`      | Array  | Array of font source objects with the following properties:   |
+
+**src Array Item Properties:**
+
+| Property | Type   | Description                                                   |
+| -------- | ------ | ------------------------------------------------------------- |
+| `url`    | string | Path to the font file                                         |
+| `format` | string | Format of the font file (e.g., 'woff', 'woff2', 'ttf', 'otf') |
 
 ## Example Implementation
 
