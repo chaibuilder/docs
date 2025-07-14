@@ -22,7 +22,7 @@ You can extend Chai Builder in various ways:
 
 1. [Add custom blocks](#registering-custom-blocks)
 2. [Add sidebar panels](#registering-sidebar-panels)
-3. [Add custom fonts](/docs/developers/extending-builder/register-custom-fonts)
+3. [Add custom fonts](/docs/developers/register-custom-fonts)
 4. [Add top bar](#customizing-the-top-bar)
 5. [Add custom media manager](#customizing-the-media-manager)
 6. [Add custom block settings](#customizing-block-settings)
