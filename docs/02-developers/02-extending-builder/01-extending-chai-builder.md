@@ -22,7 +22,7 @@ You can extend Chai Builder in various ways:
 
 1. [Add custom blocks](#registering-custom-blocks)
 2. [Add sidebar panels](#registering-sidebar-panels)
-3. [Add custom fonts](#registering-custom-fonts)
+3. [Add custom fonts](/docs/developers/register-custom-fonts)
 4. [Add top bar](#customizing-the-top-bar)
 5. [Add custom media manager](#customizing-the-media-manager)
 6. [Add custom block settings](#customizing-block-settings)
@@ -87,36 +87,6 @@ registerChaiSidebarPanel(panelId: string, panelOptions: ChaiSidebarPanel): void
 | `width`    | `number`                                         | No       | Width of the panel in pixels           |
 | `view`     | `"standard" \| "modal" \| "overlay" \| "drawer"` | No       | How the panel should be displayed      |
 
-## Registering Custom Fonts
-
-Custom fonts enhance the typography options in your Chai Builder projects. For detailed information, see the [Register Custom Fonts](/docs/developers/register-custom-fonts) guide.
-
-**Function Signature:**
-
-```tsx
-registerChaiFont(fontName: string, options: ChaiFontViaUrl | ChaiFontViaSrc): void
-```
-
-**Parameters:**
-
-| Parameter  | Type                               | Description                  |
-| ---------- | ---------------------------------- | ---------------------------- |
-| `fontName` | `string`                           | Name of the font to register |
-| `options`  | `ChaiFontViaUrl \| ChaiFontViaSrc` | Font configuration object    |
-
-**ChaiFontViaUrl Properties:**
-
-| Property   | Type     | Description                                                   |
-| ---------- | -------- | ------------------------------------------------------------- |
-| `url`      | `string` | URL to the font stylesheet (e.g., Google Fonts URL)           |
-| `fallback` | `string` | Fallback font family to use if the primary font fails to load |
-
-**ChaiFontViaSrc Properties:**
-
-| Property   | Type     | Description                                                   |
-| ---------- | -------- | ------------------------------------------------------------- |
-| `fallback` | `string` | Fallback font family to use if the primary font fails to load |
-| `src`      | `Array`  | Array of font source objects with url and format properties   |
 
 ## Customizing the Top Bar
 
