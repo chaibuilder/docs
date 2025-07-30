@@ -4,22 +4,22 @@ title: Deploy to Vercel
 
 You can easily deploy your site built on [ChaiBuilder.com](http://chaibuilder.com/) to Vercel.
 
-### 🔁 One-Click Deployment
+### One-Click Deployment
 
 Click the link below to instantly deploy the ChaiBuilder template to Vercel:
 
 > **👉** [**Deploy to Vercel**](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fchaibuilder%2Fchaibuilder-nextjs&env=CHAIBUILDER_API_KEY%2CCHAIBUILDER_WEBHOOK_SECRET&envDescription=CHAIBUILDER_API_KEY%20is%20needed%20to%20access%20the%20builder.%20CHAIBUILDER_WEBHOOK_SECRET%20is%20a%20custom%20key%20you%20can%20set%20for%20your%20site&envLink=https%3A%2F%2Fchaibuilder.com%2Fsites&repository-name=chaibuilder-nextjs)
 
-**Required Environment Variables:**
+**Required Environment Variables:** [Goto Sites](https://chaibuilder.com/sites)
 
 - `CHAIBUILDER_API_KEY` – Required to access the builder
 - `CHAIBUILDER_WEBHOOK_SECRET` – A secret key for your site (can be custom)
 
 Set these in the deployment form or later in your Vercel project settings.
 
----
+--- OR ---
 
-### 🛠️ Manual Deployment Steps
+### Manual Deployment Steps
 
 If you prefer to deploy manually:
 
