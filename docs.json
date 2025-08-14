@@ -11,12 +11,6 @@
         "path": "/docs/01-overview/01-about-chai-builder.md"
       },
       {
-        "id": "01-overview/02-open-source-website-builder.md",
-        "title": "Open Source Website Builder",
-        "slug": "/docs/overview/open-source-website-builder",
-        "path": "/docs/01-overview/02-open-source-website-builder.md"
-      },
-      {
         "id": "01-overview/03-chaibuilder-sdk-vs-pages.md",
         "title": "Chaibuilder Sdk Vs Pages",
         "slug": "/docs/overview/chaibuilder-sdk-vs-pages",
@@ -115,6 +109,19 @@
         "title": "Creating New Page",
         "slug": "/docs/editors/creating-new-page",
         "path": "/docs/03-editors/01-creating-new-page.md"
+      }
+    ]
+  },
+  {
+    "id": "04-open-source",
+    "title": "Open Source",
+    "slug": "/docs/open-source",
+    "children": [
+      {
+        "id": "04-open-source/01-react-sdk.md",
+        "title": "React Sdk",
+        "slug": "/docs/open-source/react-sdk",
+        "path": "/docs/04-open-source/01-react-sdk.md"
       }
     ]
   }
