@@ -11,22 +11,16 @@
         "path": "/docs/01-overview/01-about-chai-builder.md"
       },
       {
-        "id": "01-overview/03-chaibuilder-sdk-vs-pages.md",
-        "title": "Chaibuilder Sdk Vs Pages",
-        "slug": "/docs/overview/chaibuilder-sdk-vs-pages",
-        "path": "/docs/01-overview/03-chaibuilder-sdk-vs-pages.md"
-      },
-      {
-        "id": "01-overview/04-changelog.md",
+        "id": "01-overview/02-changelog.md",
         "title": "Changelog",
         "slug": "/docs/overview/changelog",
-        "path": "/docs/01-overview/04-changelog.md"
+        "path": "/docs/01-overview/02-changelog.md"
       },
       {
-        "id": "01-overview/05-roadmap.md",
+        "id": "01-overview/03-roadmap.md",
         "title": "Roadmap",
         "slug": "/docs/overview/roadmap",
-        "path": "/docs/01-overview/05-roadmap.md"
+        "path": "/docs/01-overview/03-roadmap.md"
       }
     ]
   },
@@ -122,6 +116,12 @@
         "title": "React Sdk",
         "slug": "/docs/open-source/react-sdk",
         "path": "/docs/04-open-source/01-react-sdk.md"
+      },
+      {
+        "id": "04-open-source/02-chai-blocks.md",
+        "title": "Chai Blocks",
+        "slug": "/docs/open-source/chai-blocks",
+        "path": "/docs/04-open-source/02-chai-blocks.md"
       }
     ]
   }
