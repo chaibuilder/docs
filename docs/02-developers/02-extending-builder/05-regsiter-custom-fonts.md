@@ -27,8 +27,7 @@ The `registerChaiFont` function allows you to add custom fonts to your Chai Buil
 First, ensure you have the required package:
 
 ```bash
-pnpm add @chaibuilder/sdk
-pnpm add @chaibuilder/pages //if you are using @chaibuilder/pages
+pnpm add chai-next
 ```
 
 ## Usage
@@ -48,7 +47,7 @@ import {
   registerChaiFont,
   ChaiFontViaUrl,
   ChaiFontViaSrc,
-} from "@chaibuilder/pages/runtime"; //if you are using @chaibuilder/pages
+} from "chai-next/blocks"; //if you are using chai-next
 ```
 
 ### Method 1: Register Font via URL (e.g., Google Fonts)

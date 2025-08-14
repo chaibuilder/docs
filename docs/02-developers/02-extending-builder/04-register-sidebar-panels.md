@@ -23,8 +23,7 @@ Sidebar panels are UI components that appear in the ChaiBuilder editor's sidebar
 First, ensure you have the required package:
 
 ```bash
-pnpm add @chaibuilder/sdk
-pnpm add @chaibuilder/pages //if you are using @chaibuilder/pages
+pnpm add chai-next
 ```
 
 ## Basic Usage
@@ -36,7 +35,8 @@ import { registerChaiSidebarPanel } from "@chaibuilder/sdk/runtime";
 const MyPanelButton = ({ isActive, show }) => (
   <button
     onClick={show}
-    className={isActive ? "active-button" : "normal-button"}>
+    className={isActive ? "active-button" : "normal-button"}
+  >
     My Panel
   </button>
 );

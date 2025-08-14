@@ -7,7 +7,7 @@ title: Registering Block Props
 Under the hood we use [**react-jsonschema-form (RJSF)**](https://github.com/rjsf-team/react-jsonschema-form) to auto-generate the Settings panel.
 
 ```ts
-import { registerChaiBlockSchema } from "@chaibuilder/pages/runtime";
+import { registerChaiBlockSchema } from "chai-next/blocks";
 ```
 
 ---
