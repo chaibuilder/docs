@@ -22,11 +22,8 @@ registerChaiBlock<T>(Component, Config);
 ## Minimal Example
 
 ```ts
-import {
-  registerChaiBlock,
-  ChaiBlockComponentProps,
-} from "@chaibuilder/pages/runtime";
-import { styleProp, registerChaiBlockSchema } from "@chaibuilder/pages/runtime";
+import { registerChaiBlock, ChaiBlockComponentProps } from "chai-next/blocks";
+import { styleProp, registerChaiBlockSchema } from "chai-next/blocks";
 
 // 1. Props interface
 export type ButtonProps = { text: string; styles: ChaiStyles };

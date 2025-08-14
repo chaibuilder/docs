@@ -48,7 +48,7 @@ import {
   registerChaiFont,
   ChaiFontViaUrl,
   ChaiFontViaSrc,
-} from "@chaibuilder/pages/runtime"; //if you are using @chaibuilder/pages
+} from "chai-next/blocks"; //if you are using chai-next
 ```
 
 ### Method 1: Register Font via URL (e.g., Google Fonts)
