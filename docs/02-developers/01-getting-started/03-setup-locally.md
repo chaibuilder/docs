@@ -30,7 +30,7 @@ cd chaibuilder-nextjs
 Using pnpm:
 
 ```bash
-pnpm install
+npm install
 ```
 
 ---
@@ -57,7 +57,7 @@ You can find your API key and manage your site [here](https://chaibuilder.com/si
 ## 5. ▶️ Run the Dev Server
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 ---

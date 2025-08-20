@@ -34,8 +34,7 @@ You can extend Chai Builder in various ways:
 First, ensure you have the required package:
 
 ```bash
-pnpm add @chaibuilder/sdk
-pnpm add @chaibuilder/pages //if you are using @chaibuilder/pages
+pnpm add chai-next
 ```
 
 ## Basic Setup
@@ -86,7 +85,6 @@ registerChaiSidebarPanel(panelId: string, panelOptions: ChaiSidebarPanel): void
 | `panel`    | `React.ComponentType`                            | No       | React component for the panel content  |
 | `width`    | `number`                                         | No       | Width of the panel in pixels           |
 | `view`     | `"standard" \| "modal" \| "overlay" \| "drawer"` | No       | How the panel should be displayed      |
-
 
 ## Customizing the Top Bar
 
